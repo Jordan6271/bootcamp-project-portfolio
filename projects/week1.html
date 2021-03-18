@@ -14,9 +14,12 @@
     <body class="bg-secondary">
         <div id="container-fluid" class="w-75 justify-content-center m-auto">
             <div id="navigation-area" class="row py-2">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><h1>Basic Web Page</h1></a>
+                        <div class="navbar-brand">
+                            <h1 class="d-lg-none">Week 1</h1>
+                            <h1 class="d-none d-lg-block">Basic Web Page</h1>
+                        </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -37,14 +40,14 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseTwo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Two</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseTwo">
+                                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarPhaseTwo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Two</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="navbarPhaseTwo">
                                         <li><a class="dropdown-item" href="#">To Be Completed</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseThree" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Three</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseThree">
+                                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarPhaseThree" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Three</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="navbarPhaseThree">
                                         <li><a class="dropdown-item" href="#">To Be Completed</a></li>
                                     </ul>
                                 </li>
@@ -53,20 +56,42 @@
                     </div>
                 </nav>
             </div>
-            <div id="one" class="row bg-dark text-red text-center rounded">
-                <div id="about-me" class="col-12 border-bottom border-red">
-                    <h2 class="row justify-content-center py-3"></h1>
-                    <p class="mx-3 mb-4"></p>  
+            <div id="content-area" class="row bg-dark text-red text-center rounded">
+                <div id="intro" class="col-12 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3">Project Overview</h1>
+                    <div id="carousel-basic-web-page" class="carousel slide d-none d-lg-block pb-5" data-ride="carousel" data-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Git"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="1" aria-label="Unix"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week1/git.png" alt="Git and GitHub Workflow">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week1/unix.png" alt="Unix Shell">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-basic-web-page" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Prev</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-basic-web-page" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <p class="mx-3 mb-4">The first project for the bootcamp was to create a simple page to demonstrate basic HTML skills, and show our current knowledge of Git, the GitHub workflow, and the Unix shell. I just made a simple one-page site with some descriptions of the topics in question and also screenshots of some commands in action.</p>
                 </div>
-                <div id="two" class="col-12 col-lg-6 border-bottom border-red">
+                <div id="problems" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3 mt-4"></h2>
                     <p class="mx-3"></p>
                 </div>
-                <div id="three" class="col-12 col-lg-6 border-bottom border-red">
+                <div id="successes" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3"></h2>
                     <p class="mx-3 mb-5"></p>
                 </div>
-                <div id="four" class="col-12">
+                <div id="links" class="col-12">
                     <h2 class="row justify-content-center py-3"></h2>
                     <p class="mx-3"></p>
                     <p class="mx-3 mb-4"></p>
@@ -77,9 +102,9 @@
         <!-- Bootstrap JavaScript-->
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         
         <!-- My JavaScript-->
-        <script src="scripts/index.js"></script>
+        <script src="../scripts/index.js"></script>
     </body>
 </html>
