@@ -28,3 +28,10 @@
     background-color: #B6B6B6;
     font-weight: bold;
 }
+
+/* End of Navbar styling */
+
+/* Carousel Styling */
+.carousel-indicators .active {
+    background-color: #C30000;
+}
