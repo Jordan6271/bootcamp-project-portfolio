@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- My CSS -->
         <link rel="stylesheet" type="text/css" href="styles/custom.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -13,41 +13,56 @@
     </head>
     <body class="bg-secondary">
         <div id="container-fluid" class="w-75 justify-content-center m-auto">
-            <div id="heading-area">
-                <div id="heading">
-                    <div id="top-title" class="py-2">
-                        <h1><a href="/" class="text-decoration-none text-reset">My Portfolio</a></h1>
-                    </div>
-                </div>
-            </div>
             <div id="navigation-area" class="row py-2">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav">
-                        <a class="nav-item nav-link active text-red" href="/">Home</a>
-                        <a class="nav-item nav-link" href="/projects/week1.html">Basic Web Page</a>
-                        <a class="nav-item nav-link" href="/projects/week2.html">Hobby Website</a>
-                        <a class="nav-item nav-link" href="/projects/week4.html">JavaScript Quiz</a>
-                        <a class="nav-item nav-link" href="/projects/week5.html">OOP Adventure Game</a>
-                        <a class="nav-item nav-link" href="/projects/week6.html">Game of Life</a>
-                        <a class="nav-item nav-link" href="/projects/week7.html">Caesar Cipher</a>
-                      </div>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><h1>My Bootcamp Portfolio</h1></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-danger" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase One</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary"aria-labelledby="navbarPhaseOne">
+                                        <li><a class="dropdown-item" href="/projects/week1.html">Basic Web Page</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week2.html">Hobby Website</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week4.html">JavaScript Quiz</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week5.html">OOP Adventure Game</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week6.html">Game of Life</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week7.html">Caesar Cipher</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseTwo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Two</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseTwo">
+                                        <li><a class="dropdown-item" href="#">To Be Completed</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseThree" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Three</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseThree">
+                                        <li><a class="dropdown-item" href="#">To Be Completed</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
+                </nav>
             </div>
             <div id="content-area" class="row bg-dark text-red text-center rounded">
                 <div id="about-me" class="col-12 border-bottom border-red">
                     <h2 class="row justify-content-center py-3">About Me</h1>
                     <p class="mx-3 mb-4">My name is Jordan, and I have always been interested in programming in general. I've tried my hand at creating websites, making lots of interesting tools, and designing simple games. This has given me some experience using HTML, CSS, JavaScript, and C++. This portfolio is specifically going to be regarding the projects I've been working on throughout my time on a bootcamp programming course taught by The Developer Academy. I will be using this design as a base to make a portfolio of my personal projects in the future.</p>  
                 </div>
-                <div id="current-work" class="col-12 col-md-6 border-bottom border-red">
+                <div id="current-work" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3 mt-4">My Current Work</h2>
                     <p class="mx-3">I currently work with Mattress Online as an apprentice on the web team. My main tasks recently have been associated with writing automated tests using Cypress, which has a JavaScript framework, and a lot of the projects I've worked on so far with this bootcamp has helped me in my everyday work, and I've been able to see significant progress in how I am thinking about and writing my tests. It's also given me a great basis for getting up to speed with the working life of a developer, and how teamwork and communication can be so important in such an environment.</p>
                 </div>
-                <div id="past-experience" class="col-12 col-md-6 border-bottom border-red">
+                <div id="past-experience" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3">Past Experience</h2>
                     <p class="mx-3 mb-5">Other than my current work, all of my IT and coding experience has really come from personal projects and playing around with things as a hobby. I did Astrophysics at university, and while I did do a couple of programming modules, the only other part of my degree that is relevant to me nowadays is the mathematical parts, which definitely helps with game design. After university I had a non-technical entry-level job, and spent a lot of my spare time trying to make websites and simple video games (along with playing lots of video games, which has given me a large amount of passion to eventually make a 'proper' game that I'd enjoy sitting down and playing for as long as I have sunk into some others).</p>
                 </div>
@@ -59,6 +74,11 @@
             </div>
         </div>
 
+        <!-- Bootstrap JavaScript-->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
         <!-- My JavaScript-->
         <script src="scripts/index.js"></script>
     </body>

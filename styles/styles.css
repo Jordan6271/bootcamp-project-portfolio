@@ -1,0 +1,30 @@
+/* Navbar CSS for hover functionality */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu { 
+        display: none; 
+    }
+	.navbar .nav-item:hover .dropdown-menu { 
+        display: block; 
+    }
+}	
+.navbar .nav-item .dropdown-menu { 
+    margin-top: 0; 
+}
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: grey;
+}
+.navbar #main-nav {
+    justify-content: flex-end;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #930000;
+    color: white;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: #C30000;
+    color: white;
+}
+.navbar .nav-item .dropdown-menu .current:hover {
+    background-color: #B6B6B6;
+    font-weight: bold;
+}

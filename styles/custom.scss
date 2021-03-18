@@ -2,12 +2,20 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// Create your own map
+// Add custom colours to Bootstrap
 $custom-colors: (
   "red": $red-600
 );
 
-// Merge the maps
+// Merge theme colours with custom colours
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-down($breakpoint) {
+      .border-#{$breakpoint}-right-none {
+          border-right:none !important;
+      }
+    }
+  }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

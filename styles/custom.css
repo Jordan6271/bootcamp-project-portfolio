@@ -1,3 +1,21 @@
+.border-xs-right-none {
+  border-right: none !important; }
+
+@media (max-width: 575.98px) {
+  .border-sm-right-none {
+    border-right: none !important; } }
+@media (max-width: 767.98px) {
+  .border-md-right-none {
+    border-right: none !important; } }
+@media (max-width: 991.98px) {
+  .border-lg-right-none {
+    border-right: none !important; } }
+@media (max-width: 1199.98px) {
+  .border-xl-right-none {
+    border-right: none !important; } }
+@media (max-width: 1399.98px) {
+  .border-xxl-right-none {
+    border-right: none !important; } }
 /*!
  * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
