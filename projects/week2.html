@@ -4,19 +4,82 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-
+        
         <!-- My CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/custom.css">
         <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 
         <title>Week 2 - Hobby Website</title>    
     </head>
-    <body>
+    <body class="bg-secondary">
+        <div id="container-fluid" class="w-75 justify-content-center m-auto">
+            <div id="navigation-area" class="row py-2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><h1>Hobby Website</h1></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase One</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary"aria-labelledby="navbarPhaseOne">
+                                        <li><a class="dropdown-item" href="/projects/week1.html">Basic Web Page</a></li>
+                                        <li><a class="dropdown-item current text-danger" href="/projects/week2.html">Hobby Website</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week4.html">JavaScript Quiz</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week5.html">OOP Adventure Game</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week6.html">Game of Life</a></li>
+                                        <li><a class="dropdown-item" href="/projects/week7.html">Caesar Cipher</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseTwo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Two</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseTwo">
+                                        <li><a class="dropdown-item" href="#">To Be Completed</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-none" href="#" id="navbarPhaseThree" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Three</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarPhaseThree">
+                                        <li><a class="dropdown-item" href="#">To Be Completed</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="one" class="row bg-dark text-red text-center rounded">
+                <div id="about-me" class="col-12 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3"></h1>
+                    <p class="mx-3 mb-4"></p>  
+                </div>
+                <div id="two" class="col-12 col-lg-6 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3 mt-4"></h2>
+                    <p class="mx-3"></p>
+                </div>
+                <div id="three" class="col-12 col-lg-6 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3"></h2>
+                    <p class="mx-3 mb-5"></p>
+                </div>
+                <div id="four" class="col-12">
+                    <h2 class="row justify-content-center py-3"></h2>
+                    <p class="mx-3"></p>
+                    <p class="mx-3 mb-4"></p>
+                </div>
+            </div>
+        </div>
 
-
+        <!-- Bootstrap JavaScript-->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
         <!-- My JavaScript-->
-        <script src="../scripts/index.js"></script>
+        <script src="scripts/index.js"></script>
     </body>
 </html>
