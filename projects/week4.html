@@ -62,13 +62,21 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Picture 1"></button>
                             <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="1" aria-label="Picture 2"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="2" aria-label="Picture 3"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="3" aria-label="Picture 4"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-75 m-auto" src="#" alt="">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week4/js-quiz.png" alt="Quiz Intro">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-75 m-auto" src="#" alt="">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week4/quiz-questions.png" alt="Quiz Questions">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week4/quiz-results.png" alt="Quiz Results">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="../images/phase1/week4/quiz-functions.png" alt="Quiz Functions">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-basic-web-page" role="button" data-slide="prev">
@@ -80,15 +88,15 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <p class="mx-3 mb-4"></p>
+                    <p class="mx-3 mb-4">In this project, I created a 10 question quiz with the use of JavaScript for all of the functionality, and designed a basic web page to display it with. The topic I chose was World of Warcraft because it's a game I enjoy and know a lot about, so I figured it would be a good chance to try out a scoring system, as this would be the first time I had kept track of a variable throughout functions in that way. I used the <code class="text-danger">innerHTML</code> property to show results at the end of the quiz and tailor it based on the score the user had at the time of reaching the final section. Overall, I'd say this quiz came out well and works as I'd hoped functionally, but I didn't put much effort into making the web page suitable for mobile and definitely didn't do a mobile first design, so the display doesn't really work on smaller screens.</p>
                 </div>
                 <div id="difficulties" class="col-12 col-lg-6 border-bottom border-red">
-                    <h2 class="row justify-content-center py-3 mt-3">Difficulties</h2>
-                    <p class="mx-3 mb-4"></p>
+                    <h2 class="row justify-content-center py-3">Difficulties</h2>
+                    <p class="mx-3 mb-4">The only real difficulty of this task for me was the scoring system, and I'm still not entirely happy with how it turned out, as I am sure there is a way to rewrite the part of the <code class="text-danger">revealResults()</code> function that calculates the score in a way to remove the redundancy - perhaps with the use of a <code class="text-danger">for</code> loop. It was also a struggle for me to get scoring to work with the HTML, and considered just writing the quiz questions fully in JavaScript, but the use of the <code class="text-danger">value</code> attribute on the radio labels helped a lot in the end.</p>
                 </div>
                 <div id="progression" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3">Progression</h2>
-                    <p class="mx-3 mb-4"></p>
+                    <p class="mx-3 mb-4">Although I think the function to calculate scoring could be improved upon, I am pleased with how far I've come in terms of being able to write a function that takes a variable, edits it, and spits out the new variable, and even more so that the display on the page changes based off what that new variable is. I've also never used radio label values in the way I have to calculate the score, so that's another area that this project helped me learn.</p>
                 </div>
                 <div id="links" class="col-12">
                     <h2 class="row justify-content-center py-3">Links to Project</h2>
