@@ -62,13 +62,21 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Picture 1"></button>
                             <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="1" aria-label="Picture 2"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="2" aria-label="Picture 3"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="3" aria-label="Picture 4"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-75 m-auto" src="#" alt="">
+                                <img class="d-block w-75 m-auto" src="../images/week7/caesar-cipher.png" alt="Caesar Cipher">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-75 m-auto" src="#" alt="">
+                                <img class="d-block w-75 m-auto" src="../images/week7/cipher-input.png" alt="Cipher Input">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="../images/week7/encrypt-screen.png" alt="Encrypt Screen">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="../images/week7/decrypt-screen.png" alt="Decrypt Screen">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-basic-web-page" role="button" data-slide="prev">
@@ -80,15 +88,15 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <p class="mx-3 mb-4"></p>
+                    <p class="mx-3 mb-4">This project was to create a Caesar Cipher, which is essentially a form of substitution cipher that shifts through the alphabet in accordance with the numerical key given, so if you put a key of 1, each letter in the code would shift one character to the right. I made my cipher shift through the ascii alphabet from '!' (ascii value 33) all the way to '~' (ascii value 126). I added the functionality to decrypt the given code as well and encrypt, which just runs the same function but in reverse, so it iterates backwards through the appropriate range of ascii values. I also decided to use as minimal handwritten CSS as possible, and did as much of the styling as I could through pure bootstrap. I think this turned out very well, and overall I'm pleased with how the project ended up.</p>
                 </div>
                 <div id="difficulties" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3 mt-3">Difficulties</h2>
-                    <p class="mx-3 mb-4"></p>
+                    <p class="mx-3 mb-4">A large part of the difficulty I had with this project stemmed from the mathematics behind looping around to the other end of the chosen ascii value range when the code + the key would push the cipher past the boundary of the ascii range. I found it quite frustrating to debug each step, given how complex the <code class="text-danger">for</code> loops were becoming, and trying to figure out how to fix the bugs with the calculations after locating where the code was incorrect was no easy task either. As I also decided to try and style everything using pure bootstrap, some of the components took a while to figure out, but I overcame this quite quickly after I read up more about bootstrap.</p>
                 </div>
                 <div id="progression" class="col-12 col-lg-6 border-bottom border-red">
                     <h2 class="row justify-content-center py-3">Progression</h2>
-                    <p class="mx-3 mb-4"></p>
+                    <p class="mx-3 mb-4">The main thing that this project helped me with was to push me to think more mathematically-minded and translate that learning into code. I ended up having to use nested <code class="text-danger">for</code> loops to move the current position of the output calculation back to the other side of the chosen range of ascii values, and spent a lot of time debugging what was going wrong with these calculations through the use of <code class="text-danger">console.log()</code>. As I attempted to style every component with bootstrap rather than handwritten CSS, this project also gave me a chance to get much more familiar with bootstrap components, especially how spacing can be done with the framework. Overall, I'm most pleased with my progression on the bootstrap front, as this is a very transferrable skill on every site I'll make in the future, including this portfolio.</p>
                 </div>
                 <div id="links" class="col-12">
                     <h2 class="row justify-content-center py-3">Links to Project</h2>
