@@ -1,14 +1,14 @@
 /* Navbar CSS for hover functionality */
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu { 
-        display: none; 
+    .navbar .nav-item .dropdown-menu {
+        display: none;
     }
-	.navbar .nav-item:hover .dropdown-menu { 
-        display: block; 
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
     }
-}	
-.navbar .nav-item .dropdown-menu { 
-    margin-top: 0; 
+}
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
 }
 .navbar .nav-item .dropdown-menu .dropdown-item {
     color: grey;
@@ -21,29 +21,29 @@
     color: white;
 }
 .navbar .nav-item .dropdown-menu .dropdown-item:active {
-    background-color: #C30000;
+    background-color: #c30000;
     color: white;
 }
 .navbar .nav-item .dropdown-menu .current:hover {
-    background-color: #B6B6B6;
+    background-color: #b6b6b6;
     font-weight: bold;
 }
 
 /* Carousel Styling */
 .carousel-indicators .active {
-    background-color: #C30000;
+    background-color: #c30000;
 }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 15px;
+    width: 15px;
 }
 ::-webkit-scrollbar-track {
-  background: #292b2c;
+    background: #292b2c;
 }
 ::-webkit-scrollbar-thumb {
-  background: #930000;
+    background: #930000;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #C30000;
-  }
+    background: #c30000;
+}

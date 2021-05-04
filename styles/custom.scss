@@ -4,7 +4,7 @@
 
 // Add custom colours to Bootstrap
 $custom-colors: (
-  "red": $red-600
+    "red": $red-600,
 );
 
 // Merge theme colours with custom colours
@@ -12,10 +12,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-down($breakpoint) {
-      .border-#{$breakpoint}-right-none {
-          border-right:none !important;
-      }
+        .border-#{$breakpoint}-right-none {
+            border-right: none !important;
+        }
     }
-  }
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
