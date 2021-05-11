@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- My CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/custom.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+        <title>Week 10 - Noteable</title>    
+    </head>
+    <body class="bg-secondary">
+        <div id="container-fluid" class="w-75 justify-content-center m-auto">
+            <div id="navigation-area" class="row py-2">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
+                    <div class="container-fluid">
+                        <div class="navbar-brand">
+                            <h1 class="d-lg-none">Week 10</h1>
+                            <h1 class="d-none d-lg-block">Noteable</h1>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase One</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary"aria-labelledby="navbarPhaseOne">
+                                        <li><a class="dropdown-item" href="week1.html">Basic Web Page</a></li>
+                                        <li><a class="dropdown-item" href="week2.html">Hobby Website</a></li>
+                                        <li><a class="dropdown-item" href="week4.html">JavaScript Quiz</a></li>
+                                        <li><a class="dropdown-item" href="week5.html">OOP Adventure Game</a></li>
+                                        <li><a class="dropdown-item" href="week7.html">Caesar Cipher</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarPhaseTwo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Two</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="navbarPhaseTwo">
+                                        <li><a class="dropdown-item" href="week9.html">Calculator</a></li>
+                                        <li><a class="dropdown-item current text-danger" href="week10.html">Noteable</a></li>
+                                        <li><a class="dropdown-item" href="week11.html">What To Do</a></li>
+                                        <li><a class="dropdown-item" href="week12.html">Weather Watch</a></li>
+                                        <li><a class="dropdown-item" href="week13.html">Book List API</a></li>
+                                        <li><a class="dropdown-item" href="week14.html">Eventful</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarPhaseThree" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phase Three</a>
+                                    <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="navbarPhaseThree">
+                                        <li><a class="dropdown-item" href="#">To Be Completed</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="content-area" class="row bg-dark text-red text-center rounded">
+                <div id="intro" class="col-12 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3">Project Overview</h1>
+                    <div id="carousel-basic-web-page" class="carousel slide d-none d-lg-block pb-5" data-ride="carousel" data-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Picture 1"></button>
+                            <button type="button" data-bs-target="#carousel-basic-web-page" data-bs-slide-to="1" aria-label="Picture 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-75 m-auto" src="#" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-75 m-auto" src="#" alt="">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-basic-web-page" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Prev</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-basic-web-page" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <p class="mx-3 mb-4"></p>
+                </div>
+                <div id="difficulties" class="col-12 col-lg-6 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3 mt-3">Difficulties</h2>
+                    <p class="mx-3 mb-4"></p>
+                </div>
+                <div id="progression" class="col-12 col-lg-6 border-bottom border-red">
+                    <h2 class="row justify-content-center py-3">Progression</h2>
+                    <p class="mx-3 mb-4"></p>
+                </div>
+                <div id="links" class="col-12">
+                    <h2 class="row justify-content-center py-3">Links to Project</h2>
+                    <p class="mx-3 mb-5">In case you're interested in having a look yourself, <a href="https://jordan6271.github.io/bootcamp-project-week10/" target="_blank" class="text-danger">here is a link</a> to the project on GitHub pages, and <a href="https://github.com/Jordan6271/bootcamp-project-week10" target="_blank" class="text-danger">here is a link</a> to the repository files.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
